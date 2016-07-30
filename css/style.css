@@ -1,0 +1,148 @@
+p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+nav {
+	background: red;
+	padding: 10px 0;
+	/*hace que lo flota vuelva a entrar al padre
+	overflow: auto;*/
+}
+
+.contenedor {
+	/*como maximo 900px si es menos achicate*/
+	max-width: 900px;
+	margin: auto;
+}
+
+nav .logo {
+	max-width: 100px;
+	/*max-height: 100px;*/
+}
+
+nav ul.menu{
+	float: right;
+	margin-top: 50px;
+}
+
+nav ul.menu li{
+	display: inline-block;
+	margin: 0 10px;
+
+}
+
+header{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#66c195+0,af2d95+93 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eab92d+0,c79810+89 */
+background: #eab92d; /* Old browsers */
+background: -moz-linear-gradient(top, #eab92d 0%, #c79810 89%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #eab92d 0%,#c79810 89%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #eab92d 0%,#c79810 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eab92d', endColorstr='#c79810',GradientType=0 ); /* IE6-9 */
+	padding: 80px 0;
+}
+
+header h1, header h2{
+	color: white;
+	font-size: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+header h2{
+	font-size: 20px;
+}
+
+.productos{
+	padding: 80px 0;
+}
+
+.productos h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+
+}
+
+.productos article{
+	width: 30%;
+	display: inline-block;
+	margin: 10px;
+
+}
+
+.productos article h3{
+	font-family: 'Montserrat';
+	margin: 10px 0;
+	font-size: 20px;
+}
+
+.productos article img{
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) and (min-width: 701px){
+	nav{
+		background-color: cyan;
+	}
+}
+
+@media screen and (max-width: 700px){
+	nav{
+		background-color: pink;
+	}
+	header h2{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 500px){
+	header h1, header h2{
+		text-align: center;
+	}
+
+nav {
+	/*hace que lo flota vuelva a entrar al padre
+	overflow: auto;*/
+	overflow: auto;
+}
+
+nav .logo {
+	float: none;
+	max-width: 50px;
+	margin: auto;
+	display: block;
+	/*max-height: 100px;*/
+}
+
+nav ul.menu{
+	float: none;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+nav ul.menu li{
+	display: block;
+	margin: 0 auto;
+	font-size: 30px;
+
+
+}
+
+}
+
+@media screen and (max-width: 700px){
+	.productos article{
+	width: 90%;
+	display: block;
+	max-width: 300px;
+	margin: 70px auto;
+
+}
+}
